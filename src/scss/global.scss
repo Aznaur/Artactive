@@ -1,1 +1,30 @@
+:root {
 
+  --table-width: 750px;
+  --desktop-width: 1170px;
+  --main-font-family: 'OpenSans', 'Arial', sans-serif;
+  --main-font-size: 14px;
+  --main-line-height: 24px;
+  --main-font-weight: 400;
+  --main-color: #5e606a;
+  --title-font-family: 'Muller', 'Arial', sans-serif;
+  --title-font-weight: 700;
+  --title-font-size: 30px;
+  --title-line-height: auto;
+  --title-color: #7f38bd;
+  --subtitle-font-size: 32px;
+  --subtitle-color: #383d52;
+  --subtitle-font-weight: 500;
+  --retina-dpi: 144dpi;
+  --retina-dppx: 1.5dppx;
+}
+
+body {
+  min-width: 320px;
+  font-family: var(--main-font-family);
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+  font-weight: var(--main-font-weight);
+  color: var(--main-color);
+  background-color: #ffffff;
+}
