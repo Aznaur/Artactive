@@ -1,0 +1,35 @@
+.page-header {
+  background-color: #000000;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 107px 1fr;
+    min-height: 50px;
+    align-items: center;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  &__logo {
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.9px;
+  }
+
+  &__button {
+    justify-self: end;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    width: 25px;
+    height: 16px;
+    background-image: url('../../img/menu-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    cursor: pointer;
+  }
+}
