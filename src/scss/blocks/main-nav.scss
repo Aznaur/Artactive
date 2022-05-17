@@ -1,3 +1,58 @@
 .main-nav {
   display: none;
 }
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    column-gap: 30px;
+    align-items: center;
+
+    &__list {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    &__item {
+      margin-right: 60px;
+
+      &:last-of-type {
+        margin-right: 35;
+      }
+    }
+
+    &__link {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      letter-spacing: 0.65px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    &__phone {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+
+    &__backСall {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 900;
+      letter-spacing: 0.55px;
+      text-transform: uppercase;
+      font-size: 11px;
+      border: 2px solid #ffffff;
+      border-radius: 17px;
+      box-sizing: border-box;
+      padding: 4px 23px;
+    }
+  }
+}
