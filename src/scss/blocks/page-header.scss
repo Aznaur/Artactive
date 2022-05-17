@@ -4,9 +4,10 @@
   &__wrapper {
     display: grid;
     grid-template-columns: 107px 1fr;
+    column-gap: 30px;
     min-height: 50px;
     align-items: center;
-    padding: 10px 0;
+    padding: 15px 15px 10px 15px;
     box-sizing: border-box;
   }
 
@@ -31,5 +32,31 @@
     background-position: center top;
     background-size: contain;
     cursor: pointer;
+  }
+}
+
+@media (min-width: $table-width) {
+  .page-header {
+    &__wrapper {
+      min-height: 60px;
+      padding: 20px 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    &__wrapper {
+      min-height: 60px;
+      padding: 60px 30px;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__nav {
+      justify-self: end;
+    }
   }
 }
