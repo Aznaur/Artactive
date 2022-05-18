@@ -1,5 +1,9 @@
 .page-header {
-  background-color: #000000;
+  background-color: #9642ec;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+  align-self: start;
+  z-index: 100;
 
   &__wrapper {
     display: grid;
@@ -8,7 +12,6 @@
     min-height: 50px;
     align-items: center;
     padding: 15px 15px 10px 15px;
-    box-sizing: border-box;
   }
 
   &__logo {

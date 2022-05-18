@@ -1,0 +1,54 @@
+.promo {
+  background-color: #9642ec;
+  background-image: url(../../img/promo-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  color: #ffffff;
+  padding-bottom: 50px;
+
+  &__wrapper {
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 30px;
+  }
+
+  &__image {
+    grid-column: 1/-1;
+    margin-bottom: 16px;
+  }
+
+  &__slogan {
+    grid-column: 1/ span 5;
+    font-size: 36px;
+    letter-spacing: 1.8px;
+    line-height: 45px;
+    font-family: var(--title-font-family);
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  &__subtitle {
+    grid-column: 1/-1;
+    font-size: 21px;
+    line-height: 24px;
+    font-family: var(--title-font-family);
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    grid-column: 1/-1;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    grid-column: 1/ -1;
+    font-size: 16px;
+    margin: 0;
+  }
+}
