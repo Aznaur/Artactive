@@ -42,14 +42,25 @@
     <h1 class="visually-hidden">Копировальный центр "Artactive"</h1>
     <div class="promo">
       <div class="promo__wrapper container">
-        <img class="promo__image" src="img/promo-image-mobile.png" alt="" width="309" height="324">
-        <p class="promo__slogan">Размер не имеет значения!</p>
+        <picture>
+          <source media="(min-width: 1170px)" srcset="img/promo-image-desktop@1x.png 1x, img/promo-image-desktop@2x.png 2x">
+          <source media="(min-width: 750px)" srcset="img/promo-image-table@1x.png 1x, img/promo-image-table@2x.png 2x">
+          <img class="promo__image" src="img/promo-image-mobile.png" alt="">
+        </picture>
+
+        <p class="promo__slogan">Размер<br>не имеет значения!</p>
         <p class="promo__subtitle">Оперативная полиграфия и широкоформатная печать любого размера </p>
         <a href="#" class="promo__button button">Заказать печать</a>
         <p class="promo__text">с доставкой по Ярославлю и Ярославской области</p>
+        <button class="promo__scroll">
+          <span class="visually-hidden">Кнопка прокрутить вниз</span>
+        </button>
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer class="page-footer">
+    <a class="page-footer__link">Политика конфиденциальноси</a>
+    <p class="page-footer__copirite">ООО «АртАктив», 2017 ©</p>
+  </footer>
 </body>
 </html>
