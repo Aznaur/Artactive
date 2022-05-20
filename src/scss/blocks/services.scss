@@ -1,0 +1,82 @@
+.services {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto 310px auto;
+  column-gap: 30px;
+  row-gap: 40px;
+  background-image: url('../../img/line.png');
+  background-repeat: no-repeat;
+  background-position: 90px 90px;
+
+  &__item {
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 125px;
+    text-align: center;
+
+    &--order {
+      grid-column: 1/-1;
+      justify-self: center;
+
+      &::before {
+        background-image: url('../../img/ebook.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &--layout {
+      grid-column: 2/3;
+      grid-row: 2/3;
+      align-self: start;
+
+      &::before {
+        background-image: url('../../img/tablet.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &--seal {
+      grid-column: 1/2;
+      grid-row: 2/3;
+      align-self: end;
+
+      &::before {
+        background-image: url('../../img/writer.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &--delivery {
+      grid-column: 1/-1;
+      justify-self: center;
+
+      &::before {
+        background-image: url('../../img/moving.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 106px;
+      height: 106px;
+      background-color: #f0e2ff;
+      border-radius: 50%;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &__title {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    margin: 0;
+  }
+}
