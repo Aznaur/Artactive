@@ -30,6 +30,9 @@ body {
   font-weight: var(--main-font-weight);
   color: var(--main-color);
   background-color: #ffffff;
+  background-image: url('../img/line-bg.png');
+  background-repeat: no-repeat;
+  background-position: center top;
   display: grid;
   grid-template-rows: auto 1fr auto;
 }
