@@ -33,7 +33,21 @@ body {
   background-image: url('../img/line-bg.png');
   background-repeat: no-repeat;
   background-position: center top;
+  background-size: cover;
   display: grid;
   grid-template-rows: auto 1fr auto;
+}
+
+@media (min-width: $table-width) {
+  body {
+    background-image: url('../img/line-bg-table.png');
+    background-size: auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    background-image: url('../img/line-bg-desktop.png');
+  }
 }
 
