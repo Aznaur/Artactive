@@ -1,0 +1,66 @@
+.slider {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 65px;
+  column-gap: 40px;
+  padding-bottom: 43px;
+
+  &__list {
+    grid-column: 1/-1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 187px;
+  }
+
+  &__image {
+    border-radius: 12px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 20px 46px rgba(80,9,79,0.35),
+                0 -6px 0 -2px  #bcb3bb,
+                0 -16px 0 -8px #e5dde8;
+  }
+
+  &__item {
+    grid-column: 1/-1;
+    grid-row: 1/-1;
+
+    &--1 {
+      z-index: 1;
+      grid-column: span 1;
+    }
+
+    &--2 {
+      grid-column: span 2;
+      display: none;
+    }
+  }
+
+  &__button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 92px;
+    height: 14px;
+    cursor: pointer;
+
+    &--left {
+      background-image: url('../../img/slider-line.png');
+      transform: rotate(180deg);
+      justify-self: end;
+    }
+
+    &--right {
+      background-image: url('../../img/slider-line.png');
+      justify-self: start;
+    }
+  }
+}
